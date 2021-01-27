@@ -16381,4 +16381,24 @@ header {
 .text-brown {
   color: #cd995c; }
 
+.top-left {
+  position: absolute;
+  top: 15px;
+  left: 10px; }
+
+.w-160 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #fff;
+  flex: 1 1;
+  border-radius: 4px 0px 0px 4px; }
+
+.w-50 {
+  min-width: 40%; }
+
+.mh-80 {
+  min-height: 80%; }
+
 /*# sourceMappingURL=main.css.map */

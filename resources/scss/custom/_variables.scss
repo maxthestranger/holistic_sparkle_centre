@@ -2,7 +2,9 @@
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
+$primary: #013da5;
+$black: #05183a;
+$brown: #cd995c;
 
 // Skins
 //
@@ -20,10 +22,12 @@
 // uncomment and replace the $font and $font-family-custom-sans-serif value with any URL and font family name from Google Fonts
 //
 
-// $font: "https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" !default;
-// $font-family-custom-sans-serif: "Nunito", sans-serif !default;
-// $font-family-base: $font-family-custom-sans-serif !default;
+$font: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" !default;
+$font-family-custom-sans-serif: "Open Sans", sans-serif !default;
+$font-family-base: $font-family-custom-sans-serif !default;
 
 // Custom variables
 //
 // Need additional variables? Simply create it here and make sure you follow the naming formula explained at the top of this file.
+$fontTitle: "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+$font-family-base: "Fira Sans", sans-serif;

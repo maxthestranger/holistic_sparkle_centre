@@ -2,7 +2,6 @@
 // Fonts
 //
 
-
 // Import fonts from Google
 //
 // Using the $font variable you can import any font family from Google Fonts.
@@ -10,6 +9,7 @@
 // (e.g: https://fonts.googleapis.com/css?family=Nunito) and peste it in the _variables.scss from the custom folder
 
 @import url(#{$font});
+@import url(#{$fontTitle});
 
 // Create font from local font
 //

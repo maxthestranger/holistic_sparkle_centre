@@ -37,6 +37,7 @@
     "feather-icons": "^4.25.0",
     "highlight.js": "^9.17.1",
     "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4",
     "svg-injector": "^1.1.3"
   },
   "browserslist": [

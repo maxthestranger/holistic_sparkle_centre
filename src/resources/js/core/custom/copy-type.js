@@ -1,39 +1,35 @@
-var CopyType = (function() {
+var CopyType = (function () {
+  // Variables
 
-	// Variables
+  var $element = ".btn-type-clipboard",
+    $btn = $($element);
 
-	var $element = '.btn-type-clipboard',
-		$btn = $($element);
+  // Methods
 
+  function init($this) {
+    $this.tooltip().on("mouseleave", function () {
+      // Explicitly hide tooltip, since after clicking it remains
+      // focused (as it's a button), so tooltip would otherwise
+      // remain visible until focus is moved away
+      $this.tooltip("hide");
+    });
 
-	// Methods
+    var clipboard = new ClipboardJS($element);
 
-	function init($this) {
-		$this.tooltip().on('mouseleave', function() {
-			// Explicitly hide tooltip, since after clicking it remains
-			// focused (as it's a button), so tooltip would otherwise
-			// remain visible until focus is moved away
-			$this.tooltip('hide');
-		});
+    clipboard.on("success", function (e) {
+      $(e.trigger)
+        .attr("title", "Copied!")
+        .tooltip("_fixTitle")
+        .tooltip("show")
+        .attr("title", "Copy to clipboard")
+        .tooltip("_fixTitle");
 
-		var clipboard = new ClipboardJS($element);
+      e.clearSelection();
+    });
+  }
 
-		clipboard.on('success', function(e) {
-			$(e.trigger)
-				.attr('title', 'Copied!')
-				.tooltip('_fixTitle')
-				.tooltip('show')
-				.attr('title', 'Copy to clipboard')
-				.tooltip('_fixTitle')
-
-			e.clearSelection()
-		});
-	}
-
-
-	// Events
-	if ($btn.length) {
-		init($btn);
-	}
-
+  // Events
+  if ($btn.length) {
+    init($btn);
+  }
 })();

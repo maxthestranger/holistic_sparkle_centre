@@ -16337,6 +16337,11 @@ header {
   font-size: 17px;
   margin-right: 43px; }
 
+.d-flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 @media (max-width: 1350px) {
   .phone {
     display: none; } }
@@ -16400,5 +16405,96 @@ header {
 
 .mh-80 {
   min-height: 80%; }
+
+.testimonial-area-two {
+  position: relative;
+  background-color: #2d3652; }
+
+.testimonial-area-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-image: url(../img/testimonial/bg-shape2.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.testimonial-area-two .owl-nav .owl-prev,
+.testimonial-area-two .owl-nav .owl-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15%;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 40px;
+  color: #fff !important;
+  font-size: 24px !important;
+  background-color: #cd995c !important;
+  opacity: 0.8;
+  transition: 0.7s; }
+
+.testimonial-area-two .owl-nav .owl-prev {
+  left: 30%; }
+
+.testimonial-area-two .owl-nav .owl-prev:hover {
+  opacity: 1; }
+
+.testimonial-area-two .owl-nav .owl-next {
+  right: 60%; }
+
+.testimonial-area-two .owl-nav .owl-next:hover {
+  opacity: 1; }
+
+.testimonial-card-content {
+  text-align: center;
+  margin-left: 115px; }
+
+.testimonial-card-content h3 {
+  font-size: 24px;
+  color: #cd995c; }
+
+.testimonial-card-content p {
+  color: #fff;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; }
+
+.testimonial-img-2 img {
+  border-radius: 15px;
+  width: 370px !important; }
+
+.testimonial-icon {
+  position: absolute;
+  top: 40%;
+  left: 22%; }
+
+.testimonial-icon i {
+  font-size: 110px;
+  color: #3e4660; }
+
+.testimonial-bottom {
+  border-radius: 0 0 0 170px;
+  position: relative;
+  padding-bottom: 200px; }
+
+.testimonial-bottom::before {
+  content: "";
+  left: 0;
+  top: auto;
+  position: absolute;
+  background: #ffffff;
+  height: 17%;
+  bottom: -100px !important;
+  transform: skewY(175deg);
+  width: 100%;
+  z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */

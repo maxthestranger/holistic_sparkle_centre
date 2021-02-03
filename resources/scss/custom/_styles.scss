@@ -326,3 +326,8 @@ header {
     }
   }
 }
+
+.badge i:not(:last-child),
+.badge svg {
+  margin-right: 0rem;
+}

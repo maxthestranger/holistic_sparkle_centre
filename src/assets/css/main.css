@@ -16530,4 +16530,8 @@ header {
 .hover-brown .btn-light:hover {
   background: #cd995c; }
 
+.badge i:not(:last-child),
+.badge svg {
+  margin-right: 0rem; }
+
 /*# sourceMappingURL=main.css.map */

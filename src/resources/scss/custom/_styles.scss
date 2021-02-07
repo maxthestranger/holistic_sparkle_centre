@@ -2,6 +2,15 @@
 //
 // This is the place where you should place all additional styles and imports.
 // This will allow you to take advantage of future updates with lower time consumed on the upgrade process.
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.2s ease;
+}
+
 header {
   background: $white;
   padding: 0 45px;
@@ -480,4 +489,175 @@ header {
   100% {
     margin-top: -270px;
   }
+}
+
+.hover-opacity-8:hover,
+.opacity-8,
+.opacity-container:hover .hover-opacity-8 {
+  opacity: 0.8;
+}
+
+.shape-container.x svg {
+  fill: #fff !important;
+}
+
+.flatpickr-calendar {
+  border: 0;
+  width: auto;
+  margin-top: -2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #fff;
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.05);
+  border-radius: 0.375rem;
+}
+.flatpickr-calendar:before,
+.flatpickr-calendar:after {
+  display: none;
+}
+
+.flatpickr-months {
+  background-color: #fff;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+.flatpickr-months .flatpickr-month {
+  height: 60px;
+}
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #152c5b;
+  top: 13px;
+  transition: background-color 0.4s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .flatpickr-months .flatpickr-prev-month,
+  .flatpickr-months .flatpickr-next-month {
+    transition: none;
+  }
+}
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+  fill: rgba(21, 44, 91, 0.7);
+}
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+  color: #152c5b;
+}
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+  fill: #152c5b;
+}
+.flatpickr-months .flatpickr-prev-month {
+  margin-left: 15px;
+}
+.flatpickr-months .flatpickr-next-month {
+  margin-right: 15px;
+}
+
+.flatpickr-current-month {
+  font-size: 1.125rem;
+  color: #152c5b;
+  padding-top: 18px;
+}
+.flatpickr-current-month span.cur-month:hover {
+  background-color: transparent;
+}
+.flatpickr-current-month .numInputWrapper:hover {
+  background-color: transparent;
+}
+.flatpickr-current-month .numInputWrapper span {
+  border: 0;
+  right: -5px;
+  padding: 0;
+}
+.flatpickr-current-month .numInputWrapper span:after {
+  left: 3px;
+}
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+.flatpickr-current-month .numInputWrapper span.arrowUp:hover:after {
+  border-bottom-color: #fff;
+}
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {
+  border-top-color: rgba(255, 255, 255, 0.7);
+}
+.flatpickr-current-month .numInputWrapper span.arrowDown:hover:after {
+  border-top-color: #fff;
+}
+
+span.flatpickr-weekday {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.flatpickr-day {
+  font-size: 0.875rem;
+  border: 0;
+  color: #4a5568;
+  border-radius: 0.375rem;
+}
+.flatpickr-day.today {
+  color: #008aff !important;
+}
+.flatpickr-day.today:hover {
+  background-color: transparent;
+  color: #008aff;
+}
+.flatpickr-day:hover {
+  background-color: transparent;
+  color: #008aff;
+}
+.flatpickr-day.selected {
+  background-color: #008aff;
+  color: #fff !important;
+}
+.flatpickr-day.selected:hover {
+  background-color: #008aff;
+  color: #fff;
+}
+
+.numInputWrapper span:hover {
+  background-color: transparent;
+}
+
+.flatpickr-time {
+  border-top: 1px solid #eaecf3;
+}
+
+.flatpickr-innerContainer {
+  padding: 15px;
+}
+
+.custom_radio input[type="radio"] {
+  display: none;
+  &:not(:disabled) ~ label {
+    cursor: pointer;
+  }
+  &:disabled ~ label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, 1);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}
+
+.custom_radio label {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.custom_radio input[type="radio"]:checked + label {
+  border: 2px solid rgba(31, 45, 61, 0.6);
 }

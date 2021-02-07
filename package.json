@@ -35,6 +35,7 @@
     "bootstrap": "^4.4.1",
     "clipboard": "^2.0.4",
     "feather-icons": "^4.25.0",
+    "flatpickr": "^4.6.9",
     "highlight.js": "^9.17.1",
     "jquery": "^3.4.1",
     "owl.carousel": "^2.3.4",

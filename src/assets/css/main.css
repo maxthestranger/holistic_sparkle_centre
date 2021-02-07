@@ -16799,4 +16799,94 @@ span.flatpickr-weekday {
 .custom_radio input[type="radio"]:checked + label {
   border: 2px solid rgba(31, 45, 61, 0.6); }
 
+.wrapper {
+  height: auto;
+  max-width: 1620px;
+  margin: 80px auto;
+  border-radius: 20px;
+  background-color: #f1f9fe; }
+
+.wizard-part-title {
+  padding: 57px 38px 0px;
+  padding-bottom: 0; }
+
+.multisteps-form__progress {
+  padding: 23px 67px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
+
+.multisteps-form__progress-btn {
+  position: relative;
+  color: rgba(108, 117, 125, 0.7);
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  min-width: -webkit-max-content;
+  min-width: max-content;
+  justify-content: center;
+  margin-left: 32px; }
+
+.multisteps-form__progress-btn:first-child {
+  margin-left: 0; }
+
+.multisteps-form__progress-btn.js-active {
+  color: #013da5; }
+
+.multisteps-form__progress-btn.js-active:before {
+  border-color: #013da5;
+  font-size: 20px;
+  color: #013da5;
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free"; }
+
+.multisteps-form__progress-btn:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  left: 0px;
+  top: 0px;
+  margin-right: 15px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 3; }
+
+.multisteps-form__progress-btn:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: -40px;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color: currentColor;
+  z-index: 1; }
+
+.multisteps-form__progress-btn:last-child::after {
+  display: none; }
+
+.multisteps-form__panel[data-animation="slideVert"].js-active {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  top: 0; }
+
+.wizard-topper {
+  position: absolute;
+  top: -375px;
+  right: 5%; }
+
 /*# sourceMappingURL=main.css.map */

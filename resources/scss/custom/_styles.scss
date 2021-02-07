@@ -661,3 +661,124 @@ span.flatpickr-weekday {
 .custom_radio input[type="radio"]:checked + label {
   border: 2px solid rgba(31, 45, 61, 0.6);
 }
+
+// Slider form
+.wrapper {
+  height: auto;
+  max-width: 1620px;
+  margin: 80px auto;
+  border-radius: 20px;
+  background-color: #f1f9fe;
+  // -webkit-box-shadow: 0px 5px 62px 0px rgb(0 0 0 / 19%);
+  // box-shadow: 0px 5px 62px 0px rgb(0, 0, 0/19%);
+}
+
+.wizard-part-title {
+  padding: 57px 38px 0px;
+  padding-bottom: 0;
+}
+
+.multisteps-form__progress {
+  padding: 23px 67px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.multisteps-form__progress-btn {
+  position: relative;
+  color: rgba(108, 117, 125, 0.7);
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 32px;
+}
+
+.multisteps-form__progress-btn:first-child {
+  margin-left: 0;
+}
+
+.multisteps-form__progress-btn.js-active {
+  color: $primary;
+}
+
+.multisteps-form__progress-btn.js-active:before {
+  border-color: $primary;
+  font-size: 20px;
+  color: $primary;
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.multisteps-form__progress-btn:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  left: 0px;
+  top: 0px;
+  margin-right: 15px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.multisteps-form__progress-btn:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: -40px;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color: currentColor;
+  z-index: 1;
+}
+
+.multisteps-form__progress-btn:last-child::after {
+  display: none;
+}
+
+.multisteps-form__panel[data-animation="slideVert"].js-active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  top: 0;
+}
+
+.wizard-topper {
+  position: absolute;
+  top: -375px;
+  right: 5%;
+}

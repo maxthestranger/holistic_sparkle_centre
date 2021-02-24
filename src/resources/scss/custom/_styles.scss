@@ -1452,6 +1452,8 @@ ul {
 
 /*end of nav*/
 
+// start of multi sliding form
+
 #msform {
   text-align: center;
   position: relative;
@@ -1563,23 +1565,27 @@ select.list-dt:focus {
 }
 
 #progressbar #account:before {
-  font-family: FontAwesome;
-  content: "\f2bd";
+  // font-family: FontAwesome;
+  // content: "\f2bd";
+  content: "///";
 }
 
 #progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007";
+  // font-family: FontAwesome;
+  // content: "\f007";
+  content: "+++";
 }
 
 #progressbar #payment:before {
-  font-family: FontAwesome;
-  content: "\f09d";
+  // font-family: FontAwesome;
+  // content: "\f09d";
+  content: "$$$";
 }
 
 #progressbar #confirm:before {
-  font-family: FontAwesome;
-  content: "\f00c";
+  // font-family: FontAwesome;
+  // content: "\f00c";
+  content: "///";
 }
 
 #progressbar li:before {
@@ -1640,3 +1646,4 @@ select.list-dt:focus {
   width: 100%;
   object-fit: cover;
 }
+// End of sliding form

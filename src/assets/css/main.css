@@ -17386,20 +17386,16 @@ select.list-dt:focus {
   position: relative; }
 
 #progressbar #account:before {
-  font-family: FontAwesome;
-  content: "\f2bd"; }
+  content: "///"; }
 
 #progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007"; }
+  content: "+++"; }
 
 #progressbar #payment:before {
-  font-family: FontAwesome;
-  content: "\f09d"; }
+  content: "$$$"; }
 
 #progressbar #confirm:before {
-  font-family: FontAwesome;
-  content: "\f00c"; }
+  content: "///"; }
 
 #progressbar li:before {
   width: 50px;

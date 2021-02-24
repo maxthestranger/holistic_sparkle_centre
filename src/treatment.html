@@ -338,32 +338,103 @@
                         />
                       </fieldset>
                       <fieldset>
-                        <div class="form-card">
-                          <h2 class="fs-title">Personal Information</h2>
-                          <input
-                            type="text"
-                            name="fname"
-                            placeholder="First Name"
-                            class="form-control"
-                          />
-                          <input
-                            type="text"
-                            name="lname"
-                            placeholder="Last Name"
-                            class="form-control"
-                          />
-                          <input
-                            type="text"
-                            name="phno"
-                            placeholder="Contact No."
-                            class="form-control"
-                          />
-                          <input
-                            type="text"
-                            name="phno_2"
-                            placeholder="Alternate Contact No."
-                            class="form-control"
-                          />
+                        <div class="row text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >First name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your first name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Last name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Also your last name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row align-items-center text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Pick a date</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                data-toggle="date"
+                                placeholder="Select a call date"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label">Gender</label>
+                              <select class="custom-select">
+                                <option disabled selected>Select option</option>
+                                <option value="1">Female</option>
+                                <option value="2">Male</option>
+                                <option value="2">Rather not say</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Select Time</label
+                              >
+                              <select class="custom-select">
+                                <option disabled selected>Select option</option>
+                                <option value="1">
+                                  11:00 AM - 11:20 AM EAT
+                                </option>
+                                <option value="2">
+                                  11:20 AM - 11:40 AM EAT
+                                </option>
+                                <option value="2">
+                                  11:40 AM - 12:00 PM EAT
+                                </option>
+                                <option value="2">6:40 PM - 7:00 PM EAT</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label">Phone</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="+254-777 245 549"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-left">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >How are you feeling?</label
+                              >
+                              <textarea
+                                class="form-control"
+                                placeholder="Note to practioner/Reason for booking"
+                                rows="3"
+                              ></textarea>
+                            </div>
+                          </div>
                         </div>
                         <input
                           type="button"
@@ -381,68 +452,101 @@
                         />
                       </fieldset>
                       <fieldset>
-                        <div class="form-card">
-                          <h2 class="fs-title">Payment Information</h2>
-                          <div class="radio-group">
-                            <div class="radio" data-value="credit">
-                              <img
-                                src="https://i.imgur.com/XzOzVHZ.jpg"
-                                width="200px"
-                                height="100px"
-                              />
-                            </div>
-                            <div class="radio" data-value="paypal">
-                              <img
-                                src="https://i.imgur.com/jXjwZlj.jpg"
-                                width="200px"
-                                height="100px"
-                              />
-                            </div>
-                            <br />
-                          </div>
-                          <label class="pay">Card Holder Name*</label>
-                          <input type="text" name="holdername" placeholder="" />
-                          <div class="row">
-                            <div class="col-9">
-                              <label class="pay">Card Number*</label>
-                              <input type="text" name="cardno" placeholder="" />
-                            </div>
-                            <div class="col-3">
-                              <label class="pay">CVC*</label>
-                              <input
-                                type="password"
-                                name="cvcpwd"
-                                placeholder="***"
-                              />
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-3">
-                              <label class="pay">Expiry Date*</label>
-                            </div>
-                            <div class="col-9">
-                              <select
-                                class="list-dt"
-                                id="month"
-                                name="expmonth"
+                        <div class="row text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >First name</label
                               >
-                                <option selected>Month</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Enter your first name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Last name</label
+                              >
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Also your last name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row align-items-center text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Pick a date</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                data-toggle="date"
+                                placeholder="Select a call date"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label">Gender</label>
+                              <select class="custom-select">
+                                <option disabled selected>Select option</option>
+                                <option value="1">Female</option>
+                                <option value="2">Male</option>
+                                <option value="2">Rather not say</option>
                               </select>
-                              <select class="list-dt" id="year" name="expyear">
-                                <option selected>Year</option>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-left">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >Select Time</label
+                              >
+                              <select class="custom-select">
+                                <option disabled selected>Select option</option>
+                                <option value="1">
+                                  11:00 AM - 11:20 AM EAT
+                                </option>
+                                <option value="2">
+                                  11:20 AM - 11:40 AM EAT
+                                </option>
+                                <option value="2">
+                                  11:40 AM - 12:00 PM EAT
+                                </option>
+                                <option value="2">6:40 PM - 7:00 PM EAT</option>
                               </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label">Phone</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="+254-777 245 549"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-left">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label class="form-control-label"
+                                >How are you feeling?</label
+                              >
+                              <textarea
+                                class="form-control"
+                                placeholder="Note to practioner/Reason for booking"
+                                rows="3"
+                              ></textarea>
                             </div>
                           </div>
                         </div>
@@ -475,7 +579,7 @@
                           <div class="row justify-content-center">
                             <div class="col-7 text-center">
                               <h5 class="h5">
-                                You Have Successfully Signed Up
+                                You Have Successfully Submited your Info
                               </h5>
                             </div>
                           </div>
